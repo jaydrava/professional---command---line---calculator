@@ -15,7 +15,8 @@ def run_calculator():
     show_help()
 
     while True:
-        user_input = input("\nEnter calculation (e.g., 2 + 2) or command: ").strip()
+        user_input = input(
+            "\nEnter operator (+, -, *, /) or command (help, history, exit):").strip()
         
         if user_input.lower() == "exit":
             print("Exiting the calculator. Goodbye!")
